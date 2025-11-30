@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
+import { motion, useScroll, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import { Smartphone, Zap, Shield, TrendingUp, Globe, Heart, Download, CheckCircle2, ArrowRight, Apple, Play } from 'lucide-react';
 import Image from 'next/image';
 
@@ -50,7 +50,7 @@ export default function BSyaPage() {
       setActiveFeature((prev) => (prev + 1) % features.length);
     }, 4000);
     return () => clearInterval(interval);
-  }, [features.length]);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div ref={containerRef} className="bg-black text-white overflow-hidden">
@@ -59,8 +59,8 @@ export default function BSyaPage() {
         {/* Animated Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-bsya-blue/20 via-black to-bca-blue/20" />
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-bsya-blue/30 rounded-full blur-[120px] animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-bca-blue/30 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-bsya-blue/30 rounded-full blur-[120px] animate-pulse will-change-transform" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-bca-blue/30 rounded-full blur-[120px] animate-pulse will-change-transform" style={{ animationDelay: '1s' }} />
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
@@ -171,10 +171,11 @@ export default function BSyaPage() {
                     src="https://picsum.photos/400/800?random=90"
                     alt="BSya App Interface"
                     className="w-full h-auto"
+                    loading="lazy"
                   />
                 </div>
                 {/* Glow Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-bsya-blue/50 to-bca-blue/50 blur-[100px] -z-10" />
+                <div className="absolute inset-0 bg-gradient-to-br from-bsya-blue/50 to-bca-blue/50 blur-[100px] -z-10 will-change-transform" />
               </div>
             </motion.div>
           </div>
@@ -230,22 +231,20 @@ export default function BSyaPage() {
             <div className="relative">
               <div className="relative mx-auto max-w-[300px]">
                 <div className="relative z-10 rounded-[3rem] border-8 border-gray-900 shadow-2xl overflow-hidden bg-black">
-                  <motion.img
-                    key={activeFeature}
-                    initial={{ opacity: 0, scale: 1.1 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
-                    src={features[activeFeature].image}
-                    alt={features[activeFeature].title}
-                    className="w-full h-auto"
-                  />
+                  <AnimatePresence mode="wait">
+                    <motion.img
+                      key={activeFeature}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      src={features[activeFeature].image}
+                      alt={features[activeFeature].title}
+                      className="w-full h-auto will-change-[opacity]"
+                    />
+                  </AnimatePresence>
                 </div>
-                <motion.div
-                  key={`glow-${activeFeature}`}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  className={`absolute inset-0 bg-gradient-to-br ${features[activeFeature].color} blur-[100px] -z-10`}
-                />
+                <div className={`absolute inset-0 bg-gradient-to-br ${features[activeFeature].color} blur-[100px] -z-10 transition-colors duration-500`} />
               </div>
             </div>
           </div>

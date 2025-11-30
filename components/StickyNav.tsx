@@ -68,7 +68,7 @@ const StickyNav: React.FC = () => {
                 key={item.id}
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: index * 0.05, duration: 0.3, ease: 'easeOut' }}
                 className="relative group"
                 onMouseEnter={() => setActiveTooltip(item.id)}
                 onMouseLeave={() => setActiveTooltip(null)}
@@ -86,10 +86,11 @@ const StickyNav: React.FC = () => {
                 <AnimatePresence>
                   {activeTooltip === item.id && (
                     <motion.div
-                      initial={{ opacity: 0, x: 20 }}
+                      initial={{ opacity: 0, x: 10 }}
                       animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, x: 20 }}
-                      className="absolute right-full mr-4 top-1/2 -translate-y-1/2 pointer-events-none whitespace-nowrap"
+                      exit={{ opacity: 0, x: 10 }}
+                      transition={{ duration: 0.15, ease: 'easeOut' }}
+                      className="absolute right-full mr-4 top-1/2 -translate-y-1/2 pointer-events-none whitespace-nowrap will-change-transform"
                     >
                       <div className="bg-gray-900 text-white px-4 py-2 rounded-lg shadow-xl">
                         <p className="font-semibold text-sm">{item.label}</p>
@@ -127,17 +128,18 @@ const MobileFloatingNav: React.FC<{ items: any[] }> = ({ items }) => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
-            className="absolute bottom-20 right-0 flex flex-col gap-3 mb-2"
+            transition={{ duration: 0.2, ease: 'easeOut' }}
+            className="absolute bottom-20 right-0 flex flex-col gap-3 mb-2 will-change-transform"
           >
             {items.map((item, index) => {
               const Icon = item.icon;
               return (
                 <motion.div
                   key={item.id}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  transition={{ delay: index * 0.05 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ delay: index * 0.03, duration: 0.2, ease: 'easeOut' }}
                 >
                   <Link
                     href={item.href}

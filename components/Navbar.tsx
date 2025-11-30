@@ -114,8 +114,8 @@ const Navbar: React.FC = () => {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 w-72 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden p-2"
+                      transition={{ duration: 0.15, ease: 'easeOut' }}
+                      className="absolute top-full left-0 w-72 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden p-2 will-change-transform"
                     >
                       {link.children.map((child) => (
                         <Link
@@ -163,10 +163,11 @@ const Navbar: React.FC = () => {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: '100vh' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white fixed top-[72px] left-0 w-full overflow-y-auto pb-20"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
+            className="lg:hidden bg-white fixed top-[72px] left-0 w-full h-[calc(100vh-72px)] overflow-y-auto pb-20 will-change-transform"
           >
             <div className="flex flex-col p-6 gap-2">
               {navLinks.map((link) => (
@@ -190,13 +191,14 @@ const Navbar: React.FC = () => {
                     )}
                   </div>
                   
-                  <AnimatePresence>
+                  <AnimatePresence initial={false}>
                     {link.children && activeDropdown === link.label && (
                       <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        className="overflow-hidden bg-gray-50 rounded-xl"
+                        initial={{ opacity: 0, scaleY: 0 }}
+                        animate={{ opacity: 1, scaleY: 1 }}
+                        exit={{ opacity: 0, scaleY: 0 }}
+                        transition={{ duration: 0.2, ease: 'easeInOut' }}
+                        className="overflow-hidden bg-gray-50 rounded-xl origin-top will-change-transform"
                       >
                         {link.children.map((child) => (
                           <Link

@@ -74,12 +74,12 @@ export default function KlikBCASyariahPage() {
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
             style={{ opacity, scale }}
-            className="text-center max-w-6xl mx-auto"
+            className="text-center max-w-6xl mx-auto will-change-transform"
           >
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-bca-blue/10 rounded-full mb-8">
                 <Monitor className="text-bca-blue" size={20} />
@@ -184,6 +184,7 @@ export default function KlikBCASyariahPage() {
                   src="https://picsum.photos/1200/750?random=200"
                   alt="Klik BCA Syariah Dashboard"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
@@ -191,11 +192,11 @@ export default function KlikBCASyariahPage() {
 
             {/* Floating Cards */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="absolute -left-8 top-1/4 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden lg:block"
+              transition={{ delay: 0.2, duration: 0.4, ease: 'easeOut' }}
+              className="absolute -left-8 top-1/4 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden lg:block will-change-transform"
             >
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
@@ -209,11 +210,11 @@ export default function KlikBCASyariahPage() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-              className="absolute -right-8 bottom-1/4 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden lg:block"
+              transition={{ delay: 0.3, duration: 0.4, ease: 'easeOut' }}
+              className="absolute -right-8 bottom-1/4 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden lg:block will-change-transform"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
@@ -256,11 +257,11 @@ export default function KlikBCASyariahPage() {
               return (
                 <motion.div
                   key={idx}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
-                  className="group p-8 bg-gradient-to-br from-gray-50 to-white rounded-3xl border border-gray-200 hover:border-bca-blue/50 hover:shadow-xl transition-all"
+                  transition={{ delay: idx * 0.05, duration: 0.4, ease: 'easeOut' }}
+                  className="group p-8 bg-gradient-to-br from-gray-50 to-white rounded-3xl border border-gray-200 hover:border-bca-blue/50 hover:shadow-xl transition-all will-change-transform"
                 >
                   <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${feature.color} mb-6`}>
                     <Icon className="text-white" size={32} />
@@ -305,11 +306,11 @@ export default function KlikBCASyariahPage() {
                 return (
                   <motion.div
                     key={idx}
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ delay: idx * 0.2 }}
-                    className="bg-white/10 backdrop-blur-lg p-8 rounded-3xl border border-white/20"
+                    transition={{ delay: idx * 0.1, duration: 0.4, ease: 'easeOut' }}
+                    className="bg-white/10 backdrop-blur-lg p-8 rounded-3xl border border-white/20 will-change-transform"
                   >
                     <Icon className="mx-auto mb-4" size={48} />
                     <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
@@ -354,11 +355,11 @@ export default function KlikBCASyariahPage() {
             ].map((testimonial, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.15 }}
-                className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100"
+                transition={{ delay: idx * 0.08, duration: 0.4, ease: 'easeOut' }}
+                className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 will-change-transform"
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -382,11 +383,11 @@ export default function KlikBCASyariahPage() {
 
         <div className="container mx-auto px-6 relative z-10 text-center">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto text-white"
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+            className="max-w-4xl mx-auto text-white will-change-transform"
           >
             <h2 className="text-6xl md:text-8xl font-bold mb-8">
               Siap untuk memulai?
