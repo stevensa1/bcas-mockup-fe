@@ -9,7 +9,7 @@ export default function Simpanan() {
     {
       title: "Tahapan iB",
       desc: "Tabungan dengan prinsip Wadiah (titipan) atau Mudharabah (bagi hasil). Nikmati kemudahan transaksi dengan kartu ATM BCA Syariah.",
-      icon: <Wallet className="text-bca-purple" size={32} />,
+      icon: <Wallet className="text-bca-blue" size={32} />,
       features: ["Gratis biaya administrasi (akad Wadiah)", "Fasilitas e-Channel lengkap", "Tarik tunai di ATM BCA"],
       color: "bg-purple-50"
     },
@@ -39,7 +39,7 @@ export default function Simpanan() {
   return (
     <div className="pt-24 pb-16">
       {/* Header */}
-      <div className="bg-bca-purple text-white py-16 mb-12">
+      <div className="bg-bca-blue text-white py-16 mb-12">
         <div className="container mx-auto px-6 text-center">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -48,7 +48,7 @@ export default function Simpanan() {
           >
             Produk Simpanan
           </motion.h1>
-          <p className="text-purple-100 max-w-2xl mx-auto text-lg">
+          <p className="text-blue-100 max-w-2xl mx-auto text-lg">
             Beragam pilihan tabungan dan investasi untuk mengelola keuangan Anda sesuai prinsip syariah. Amanah dan menenteramkan.
           </p>
         </div>
@@ -70,10 +70,10 @@ export default function Simpanan() {
                 <div className={`p-4 rounded-2xl ${item.color} mb-4 inline-block`}>
                   {item.icon}
                 </div>
-                <ArrowRight className="text-gray-300 group-hover:text-bca-purple transition-colors" />
+                <ArrowRight className="text-gray-300 group-hover:text-bca-syariah-green transition-colors" />
               </div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-bca-purple transition-colors">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-bca-syariah-green transition-colors">
                 {item.title}
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
@@ -89,7 +89,7 @@ export default function Simpanan() {
                 ))}
               </div>
 
-              <button className="w-full mt-8 py-3 rounded-xl border border-bca-purple text-bca-purple font-semibold hover:bg-bca-purple hover:text-white transition-all">
+              <button className="w-full mt-8 py-3 rounded-xl border border-bca-blue text-bca-blue font-semibold hover:bg-bca-blue hover:text-white transition-all">
                 Ajukan Sekarang
               </button>
             </motion.div>

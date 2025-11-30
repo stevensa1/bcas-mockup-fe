@@ -8,7 +8,7 @@ export default function Pembiayaan() {
   return (
     <div className="pt-24 pb-16">
       <div className="bg-gray-900 text-white py-20 mb-16 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-bca-purple opacity-20 blur-[100px]"></div>
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-bca-blue opacity-20 blur-[100px]"></div>
         <div className="container mx-auto px-6 relative z-10">
           <motion.h1
             initial={{ opacity: 0, x: -20 }}
@@ -35,7 +35,7 @@ export default function Pembiayaan() {
               />
             </div>
             <div className="w-full md:w-1/2">
-              <div className="flex items-center gap-2 text-bca-purple font-bold mb-2">
+              <div className="flex items-center gap-2 text-bca-blue font-bold mb-2">
                 <Home size={20} />
                 <span>KPR iB BCA Syariah</span>
               </div>
@@ -58,7 +58,7 @@ export default function Pembiayaan() {
                 </li>
               </ul>
               <div className="flex gap-4">
-                <button className="bg-bca-purple text-white px-6 py-3 rounded-xl font-semibold hover:bg-bca-purpleLight transition-all">
+                <button className="bg-bca-blue text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-800 transition-all">
                     Simulasi KPR
                 </button>
               </div>
@@ -83,7 +83,7 @@ export default function Pembiayaan() {
                     </div>
                     <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                     <p className="text-gray-600 mb-6 text-sm">{item.desc}</p>
-                    <a href="#" className="text-bca-purple font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                    <a href="#" className="text-bca-syariah-green font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
                         Pelajari Lebih Lanjut <Calculator size={16} />
                     </a>
                 </motion.div>

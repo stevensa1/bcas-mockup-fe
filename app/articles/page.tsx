@@ -78,7 +78,7 @@ export default function Articles() {
                         onClick={() => setActiveCategory(cat)}
                         className={`px-5 py-2 rounded-full text-sm font-semibold whitespace-nowrap transition-all ${
                             activeCategory === cat
-                            ? 'bg-bca-purple text-white shadow-lg shadow-bca-purple/20'
+                            ? 'bg-bca-blue text-white shadow-lg shadow-bca-blue/20'
                             : 'bg-white text-gray-600 border border-gray-200 hover:bg-gray-50'
                         }`}
                     >
@@ -90,7 +90,7 @@ export default function Articles() {
                 <input
                     type="text"
                     placeholder="Cari artikel..."
-                    className="w-full pl-10 pr-4 py-2 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-bca-purple/20"
+                    className="w-full pl-10 pr-4 py-2 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-bca-blue/20"
                 />
                 <Search className="absolute left-3 top-2.5 text-gray-400" size={18} />
             </div>
@@ -113,7 +113,7 @@ export default function Articles() {
                             alt={article.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
-                        <span className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-bold text-bca-purple uppercase tracking-wider">
+                        <span className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-bold text-bca-syariah-green uppercase tracking-wider">
                             {article.category}
                         </span>
                     </div>
@@ -122,13 +122,13 @@ export default function Articles() {
                             <span className="flex items-center gap-1"><Calendar size={12} /> {article.date}</span>
                             <span className="flex items-center gap-1"><User size={12} /> Admin</span>
                         </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-bca-purple transition-colors">
+                        <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-bca-syariah-green transition-colors">
                             {article.title}
                         </h3>
                         <p className="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow">
                             {article.summary}
                         </p>
-                        <a href="#" className="flex items-center gap-2 text-bca-purple font-semibold text-sm hover:gap-3 transition-all mt-auto">
+                        <a href="#" className="flex items-center gap-2 text-bca-syariah-green font-semibold text-sm hover:gap-3 transition-all mt-auto">
                             Baca Selengkapnya <ArrowRight size={16} />
                         </a>
                     </div>

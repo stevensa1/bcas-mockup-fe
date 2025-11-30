@@ -39,7 +39,7 @@ const Products: React.FC = () => {
               Beragam produk yang dirancang untuk memenuhi kebutuhan gaya hidup Anda dengan tetap memegang teguh prinsip syariah.
             </p>
           </div>
-          <a href="#" className="flex items-center gap-2 text-bca-purple font-semibold hover:text-bca-purpleLight transition-colors">
+          <a href="#" className="flex items-center gap-2 text-bca-syariah-green font-semibold hover:text-green-700 transition-colors">
             Lihat Semua Produk <ArrowRight size={20} />
           </a>
         </div>
@@ -67,7 +67,7 @@ const Products: React.FC = () => {
                   </span>
                 </div>
                 {product.badge && (
-                  <div className="absolute top-4 right-4 bg-bca-gold text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                  <div className="absolute top-4 right-4 bg-bca-blue text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
                     {product.badge}
                   </div>
                 )}
@@ -77,7 +77,7 @@ const Products: React.FC = () => {
                 <p className="text-gray-600 mb-6 line-clamp-3">
                   {product.desc}
                 </p>
-                <a href="#" className="inline-flex items-center text-bca-purple font-medium hover:gap-2 transition-all">
+                <a href="#" className="inline-flex items-center text-bca-syariah-green font-medium hover:gap-2 transition-all">
                   Selengkapnya <ArrowRight size={16} className="ml-1" />
                 </a>
               </div>

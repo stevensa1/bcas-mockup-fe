@@ -17,16 +17,16 @@ const Footer: React.FC = () => {
               Menjadi Bank Syariah Andalan yang Unggul dalam Penyelesaian Pembayaran, Penghimpunan Dana, dan Pembiayaan bagi Nasabah Bisnis dan Perseorangan.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-bca-purple transition-colors">
+              <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-bca-blue transition-colors">
                 <Facebook size={16} />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-bca-purple transition-colors">
+              <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-bca-blue transition-colors">
                 <Twitter size={16} />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-bca-purple transition-colors">
+              <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-bca-blue transition-colors">
                 <Instagram size={16} />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-bca-purple transition-colors">
+              <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-bca-blue transition-colors">
                 <Youtube size={16} />
               </a>
             </div>
@@ -36,11 +36,11 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold text-lg mb-6">Perusahaan</h4>
             <ul className="space-y-4 text-slate-400 text-sm">
-              <li><a href="#" className="hover:text-bca-gold transition-colors">Tentang Kami</a></li>
-              <li><a href="#" className="hover:text-bca-gold transition-colors">Karir</a></li>
-              <li><a href="#" className="hover:text-bca-gold transition-colors">Laporan Tahunan</a></li>
-              <li><a href="#" className="hover:text-bca-gold transition-colors">Berita & Kegiatan</a></li>
-              <li><a href="#" className="hover:text-bca-gold transition-colors">Tata Kelola Perusahaan</a></li>
+              <li><a href="#" className="hover:text-bsya-yellow transition-colors">Tentang Kami</a></li>
+              <li><a href="#" className="hover:text-bsya-yellow transition-colors">Karir</a></li>
+              <li><a href="#" className="hover:text-bsya-yellow transition-colors">Laporan Tahunan</a></li>
+              <li><a href="#" className="hover:text-bsya-yellow transition-colors">Berita & Kegiatan</a></li>
+              <li><a href="#" className="hover:text-bsya-yellow transition-colors">Tata Kelola Perusahaan</a></li>
             </ul>
           </div>
 
@@ -48,11 +48,11 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold text-lg mb-6">Produk & Layanan</h4>
             <ul className="space-y-4 text-slate-400 text-sm">
-              <li><a href="#" className="hover:text-bca-gold transition-colors">Tahapan iB</a></li>
-              <li><a href="#" className="hover:text-bca-gold transition-colors">KPR iB</a></li>
-              <li><a href="#" className="hover:text-bca-gold transition-colors">KKB iB</a></li>
-              <li><a href="#" className="hover:text-bca-gold transition-colors">Pembiayaan Emas iB</a></li>
-              <li><a href="#" className="hover:text-bca-gold transition-colors">e-Banking</a></li>
+              <li><a href="#" className="hover:text-bsya-yellow transition-colors">Tahapan iB</a></li>
+              <li><a href="#" className="hover:text-bsya-yellow transition-colors">KPR iB</a></li>
+              <li><a href="#" className="hover:text-bsya-yellow transition-colors">KKB iB</a></li>
+              <li><a href="#" className="hover:text-bsya-yellow transition-colors">Pembiayaan Emas iB</a></li>
+              <li><a href="#" className="hover:text-bsya-yellow transition-colors">e-Banking</a></li>
             </ul>
           </div>
 
@@ -61,15 +61,15 @@ const Footer: React.FC = () => {
             <h4 className="font-semibold text-lg mb-6">Hubungi Kami</h4>
             <ul className="space-y-4 text-slate-400 text-sm">
               <li className="flex items-start gap-3">
-                <Phone size={18} className="text-bca-gold shrink-0 mt-0.5" />
+                <Phone size={18} className="text-bsya-yellow shrink-0 mt-0.5" />
                 <span>Halo BCA 1500888</span>
               </li>
               <li className="flex items-start gap-3">
-                <Mail size={18} className="text-bca-gold shrink-0 mt-0.5" />
+                <Mail size={18} className="text-bsya-yellow shrink-0 mt-0.5" />
                 <span>halobca@bca.co.id</span>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-bca-gold shrink-0 mt-0.5" />
+                <MapPin size={18} className="text-bsya-yellow shrink-0 mt-0.5" />
                 <span>
                   Jl. Jatinegara Timur No. 72<br />
                   Jakarta Timur 13310<br />

@@ -21,7 +21,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className="min-h-screen bg-gray-50 font-sans flex flex-col">
       {/* Progress Bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-bca-purple origin-left z-[100]"
+        className="fixed top-0 left-0 right-0 h-1 bg-bca-blue origin-left z-[100]"
         style={{ scaleX }}
       />
 

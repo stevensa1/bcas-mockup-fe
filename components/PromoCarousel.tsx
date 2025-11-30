@@ -19,7 +19,7 @@ const promos = [
     title: "Cashback Weekend",
     subtitle: "Belanja Hemat",
     desc: "Dapatkan cashback 50% untuk transaksi QRIS di merchant pilihan setiap Sabtu & Minggu.",
-    color: "bg-gradient-to-r from-bca-purple to-purple-900",
+    color: "bg-gradient-to-r from-bca-syariah-green to-green-900",
     image: "https://picsum.photos/800/400?random=11",
     cta: "Lihat Promo"
   },
@@ -28,7 +28,7 @@ const promos = [
     title: "Investasi Emas",
     subtitle: "Cicil Emas iB",
     desc: "Miliki emas batangan antam dengan angsuran tetap dan ringan. Mulai dari 5 gram.",
-    color: "bg-gradient-to-r from-bca-gold to-orange-600",
+    color: "bg-gradient-to-r from-bca-blue to-bca-syariah-green",
     image: "https://picsum.photos/800/400?random=12",
     cta: "Simulasi Cicilan"
   }

@@ -44,7 +44,7 @@ const Features: React.FC = () => {
                             <div className={`w-14 h-14 rounded-2xl ${feature.color} flex items-center justify-center mb-3 shadow-sm group-hover:shadow-md transition-all duration-300`}>
                             {feature.icon}
                             </div>
-                            <span className="text-[11px] md:text-xs font-medium text-gray-700 group-hover:text-bca-purple transition-colors leading-tight">
+                            <span className="text-[11px] md:text-xs font-medium text-gray-700 group-hover:text-bca-syariah-green transition-colors leading-tight">
                                 {feature.title}
                             </span>
                         </motion.a>

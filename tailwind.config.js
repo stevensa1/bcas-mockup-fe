@@ -8,9 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'bca-purple': '#5a3e85',
-        'bca-gold': '#d4af37',
-        'bca-purpleLight': '#6b4e96',
+        'bca-blue': '#0077C8',
+        'bca-syariah-green': '#00A3AD',
+        'bsya-blue': '#00AAFF',
+        'bsya-yellow': '#FFE600',
       },
     },
   },

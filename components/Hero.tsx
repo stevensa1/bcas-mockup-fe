@@ -9,8 +9,8 @@ const Hero: React.FC = () => {
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-50 via-white to-orange-50 -z-10" />
-      <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-bca-purple/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] bg-bca-gold/10 rounded-full blur-3xl" />
+      <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-bca-blue/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] bg-bsya-yellow/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         
@@ -20,13 +20,13 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-full shadow-sm mb-6 text-sm font-medium text-bca-purple">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-full shadow-sm mb-6 text-sm font-medium text-bca-blue">
             <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
             BSya kini lebih canggih dan mudah
           </div>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight text-gray-900 mb-6">
             Berkah Transaksi, <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-bca-purple to-bca-purpleLight">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-bca-blue to-blue-800">
               Tenang Hati
             </span>
           </h1>
@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-8 py-4 bg-bca-purple text-white rounded-xl font-semibold shadow-lg shadow-bca-purple/25 hover:bg-bca-purpleLight transition-all hover:scale-105 flex items-center justify-center gap-2">
+            <button className="px-8 py-4 bg-bca-blue text-white rounded-xl font-semibold shadow-lg shadow-bca-blue/25 hover:bg-blue-800 transition-all hover:scale-105 flex items-center justify-center gap-2">
               Buka Rekening
               <ArrowRight size={18} />
             </button>
@@ -47,11 +47,11 @@ const Hero: React.FC = () => {
 
           <div className="mt-10 flex items-center gap-8 text-gray-500 text-sm font-medium">
             <div className="flex items-center gap-2">
-              <ShieldCheck size={18} className="text-bca-purple" />
+              <ShieldCheck size={18} className="text-bca-syariah-green" />
               Terdaftar & Diawasi OJK
             </div>
             <div className="flex items-center gap-2">
-              <Heart size={18} className="text-bca-purple" />
+              <Heart size={18} className="text-bca-syariah-green" />
               Sesuai Syariah
             </div>
           </div>
@@ -88,12 +88,12 @@ const Hero: React.FC = () => {
           <motion.div 
             animate={{ y: [0, -20, 0] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-            className="absolute -top-10 -right-10 w-24 h-24 bg-bca-gold rounded-2xl transform rotate-12 -z-10 opacity-20"
+            className="absolute -top-10 -right-10 w-24 h-24 bg-bsya-yellow rounded-2xl transform rotate-12 -z-10 opacity-20"
           />
           <motion.div 
             animate={{ y: [0, 20, 0] }}
             transition={{ repeat: Infinity, duration: 7, ease: "easeInOut" }}
-            className="absolute -bottom-5 -left-5 w-32 h-32 bg-bca-purple rounded-full -z-10 opacity-10"
+            className="absolute -bottom-5 -left-5 w-32 h-32 bg-bca-blue rounded-full -z-10 opacity-10"
           />
         </motion.div>
       </div>

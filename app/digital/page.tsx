@@ -18,7 +18,7 @@ export default function Digital() {
                         transition={{ duration: 0.5 }}
                         className="relative"
                     >
-                        <div className="absolute inset-0 bg-bca-purple rounded-full blur-[100px] opacity-20"></div>
+                        <div className="absolute inset-0 bg-bsya-blue rounded-full blur-[100px] opacity-20"></div>
                         <img
                             src="https://picsum.photos/500/800?random=30"
                             alt="Mobile Banking App"
@@ -27,7 +27,7 @@ export default function Digital() {
                     </motion.div>
                 </div>
                 <div className="w-full md:w-1/2">
-                    <span className="text-bca-purple font-bold tracking-wider text-sm uppercase mb-2 block">Layanan Digital</span>
+                    <span className="text-bsya-blue font-bold tracking-wider text-sm uppercase mb-2 block">Layanan Digital</span>
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">BSya</h1>
                     <p className="text-xl text-gray-600 mb-8">
                         Mobile banking BCA Syariah. Satu aplikasi untuk segala kebutuhan transaksi perbankan dan ibadah Anda.

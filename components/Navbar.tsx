@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
             >
               <Link
                 href={link.href}
-                className={`text-sm font-semibold hover:text-bca-purple transition-colors flex items-center gap-1 py-4 ${
+                className={`text-sm font-semibold hover:text-bca-blue transition-colors flex items-center gap-1 py-4 ${
                   (isScrolled || pathname !== '/') ? 'text-gray-700' : 'text-gray-800'
                 }`}
               >
@@ -123,7 +123,7 @@ const Navbar: React.FC = () => {
                           href={child.href}
                           className="block px-4 py-3 rounded-lg hover:bg-purple-50 transition-colors group/item"
                         >
-                          <div className="font-semibold text-gray-800 group-hover/item:text-bca-purple">{child.label}</div>
+                          <div className="font-semibold text-gray-800 group-hover/item:text-bca-blue">{child.label}</div>
                           <div className="text-xs text-gray-500 mt-0.5">{child.desc}</div>
                         </Link>
                       ))}
@@ -143,7 +143,7 @@ const Navbar: React.FC = () => {
             <div className="h-6 w-px bg-gray-300 mx-1"></div>
             <Link
                 href="/digital"
-                className="flex items-center gap-2 bg-bca-purple text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-bca-purpleLight transition-all hover:shadow-lg hover:shadow-bca-purple/20"
+                className="flex items-center gap-2 bg-bca-blue text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-blue-800 transition-all hover:shadow-lg hover:shadow-bca-blue/20"
             >
                 <User size={18} />
                 <span>Internet Banking</span>
@@ -202,7 +202,7 @@ const Navbar: React.FC = () => {
                           <Link
                             key={child.label}
                             href={child.href}
-                            className="flex items-center justify-between px-5 py-3 text-gray-600 hover:text-bca-purple"
+                            className="flex items-center justify-between px-5 py-3 text-gray-600 hover:text-bca-blue"
                           >
                             <span className="text-sm font-medium">{child.label}</span>
                             <ChevronRight size={14} />
@@ -217,7 +217,7 @@ const Navbar: React.FC = () => {
               <div className="mt-6 space-y-3">
                 <Link
                     href="/digital"
-                    className="flex justify-center items-center gap-2 w-full bg-bca-purple text-white py-3.5 rounded-xl font-bold shadow-lg shadow-bca-purple/20"
+                    className="flex justify-center items-center gap-2 w-full bg-bca-blue text-white py-3.5 rounded-xl font-bold shadow-lg shadow-bca-blue/20"
                 >
                     <User size={18} />
                     Login Internet Banking
