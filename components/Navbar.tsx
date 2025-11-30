@@ -50,10 +50,10 @@ const Navbar: React.FC = () => {
     },
     {
       label: 'Layanan Digital',
-      href: '/digital',
+      href: '/bsya',
       children: [
-        { label: 'BSya', href: '/digital', desc: 'Mobile banking BCA Syariah' },
-        { label: 'Klik BCA Syariah', href: '/digital', desc: 'Internet banking' },
+        { label: 'BSya', href: '/bsya', desc: 'Mobile banking BCA Syariah' },
+        { label: 'Klik BCA Syariah', href: '/klik-bca-syariah', desc: 'Internet banking' },
       ]
     },
     { 
@@ -142,7 +142,7 @@ const Navbar: React.FC = () => {
             </button>
             <div className="h-6 w-px bg-gray-300 mx-1"></div>
             <Link
-                href="/digital"
+                href="/klik-bca-syariah"
                 className="flex items-center gap-2 bg-bca-blue text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-blue-800 transition-all hover:shadow-lg hover:shadow-bca-blue/20"
             >
                 <User size={18} />
@@ -216,7 +216,7 @@ const Navbar: React.FC = () => {
               
               <div className="mt-6 space-y-3">
                 <Link
-                    href="/digital"
+                    href="/klik-bca-syariah"
                     className="flex justify-center items-center gap-2 w-full bg-bca-blue text-white py-3.5 rounded-xl font-bold shadow-lg shadow-bca-blue/20"
                 >
                     <User size={18} />

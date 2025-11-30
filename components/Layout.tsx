@@ -3,6 +3,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import StickyNav from './StickyNav';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
 interface LayoutProps {
@@ -26,7 +27,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       />
 
       <Navbar />
-      
+      <StickyNav />
+
       <main className="flex-grow">
         {children}
       </main>
