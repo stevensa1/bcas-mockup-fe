@@ -167,7 +167,7 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2, ease: 'easeInOut' }}
-            className="lg:hidden bg-white fixed top-[72px] left-0 w-full h-[calc(100vh-72px)] overflow-y-auto pb-20 will-change-transform"
+            className="lg:hidden bg-white fixed top-0 left-0 w-full h-screen overflow-y-auto pb-20 will-change-transform pt-[72px]"
           >
             <div className="flex flex-col p-6 gap-2">
               {navLinks.map((link) => (
