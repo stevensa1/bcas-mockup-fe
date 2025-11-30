@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled || pathname !== '/'
-        ? 'bg-white/95 backdrop-blur-lg shadow-lg py-3 border-b border-gray-100'
+        ? 'bg-white/95 backdrop-blur-lg shadow-lg py-3 border-b-4 border-bca-blue'
         : 'bg-transparent py-5'
       }`}
     >
