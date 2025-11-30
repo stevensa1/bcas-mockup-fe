@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="lg:hidden p-2 text-gray-700"
+          className="lg:hidden p-2 text-gray-700 relative z-[60]"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -167,7 +167,7 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2, ease: 'easeInOut' }}
-            className="lg:hidden bg-white fixed top-0 left-0 w-full h-screen overflow-y-auto pb-20 will-change-transform pt-[72px]"
+            className="lg:hidden bg-white fixed top-0 left-0 w-full h-screen overflow-y-auto pb-20 will-change-transform pt-[72px] z-[55]"
           >
             <div className="flex flex-col p-6 gap-2">
               {navLinks.map((link) => (
